@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonction</title>
+    <h3><font color="black">Page créer par &copy; Perin Matteo</font></h3>
+    <strong>• <a href="../Pages.html">Accueil</a></strong>
+    <strong>• <a href="Utilisation_GIT.html">Git</a>
+        • <a href="Comment_crée_un_formulaire.html">Formulaire</a>
+        • <a href="Balise.html">Balise</a>
+        • <a href="bases.html">Bases</a><img src="Images/giphy.gif" height="50"></strong>
+    </br>
+    <strong>• <a href="Images/pixel_war .jpg">pixel war 2022</a></strong>
+
+</head>
+<body>
+
+<h1><font color="red">Les bases des Fonctions</font></h1>
+
+
+<h2><font color="#8fbc8f">Création d'une fonction----------------------------------------------------</font></h2>
+<p><h4>Une fonction sert à écrit du html dans une fonction est a pouvoir le reutiliser sur plusieurs autres fichier php </p>
+<p>Par exemple :</p>
+<ul>
+    <li>(function texteHtml()) ont déclare une fonction </li>
+    <li>(EOT)Ont utilise la syntaxe Heredoc </li>
+    <li>Ont recopier le texte html de "!doctype" jusque "body" </li>
+    <li>Puis ont ferme le texte html et le EOT </li>
+</ul>
+    <p>Cette méthode est pour ecrire du HTML il exsiste plus de maniere d'utiliser une fonction</h4></p>
+</br>
+<h2><font color="#8fbc8f">Une fonction avec argument-------------------------------------------</font></h2>
+<p><h4>Avec la fonction "function texteHtml()" il nous suffit d écrire le nom de argument "function texteHtml($auteur)"</p>
+<p>Puis ont ecrit l'argument la ou on veut qui apparaise "$auteur &copy; 2022"</p>
+<p>Et pour finir on ecrit se qu'il vas y avoir dans l'argument dans un autre fichier php
+    texteHtml("PERIN Matteo");</h4></p>
+</br>
+
+<h2><font color="#8fbc8f">Une fonction avec argument facultatifs-------------------------------------------</font></h2>
+<p><h4>L'on peut incrementer un fonction directement "function texteHtml ($auteur = PERIN Matteo)"</p>
+<p>Cette valeur sera une valeur par defaut elle sera pris quand il n'y a pas de valeur
+dans l'autre fichier php "texteHtml(" ");"</p>
+    <p>Si il y a une valeur dans l'autre fichier php, ces cette valeur qui vas etre prioritaires.</h4></p>
+</br>
+
+
+<h2><font color="#8fbc8f">Variables locales et globales-----------------------------------------------------</font></h2>
+<p><h4>Si ont utilise une variable dans une fonction ont ne pourras pas l'utiliser en dehord de la fonction.</p>
+    <p>Il exsiste 3 methodes pour pouvoir utiliser une variable en dehord de la fonction:</h4></p>
+<ul>
+    <li><h3>1) Retourner la valeur au programme appelant</h3>
+    <p><h4>Cette premiére méthode est la plus utiliser en entreprise.</p>
+    <p>Elle consiste à déclarer la variable dans la fonction est de marquer "return $nomVariable".</p>
+            <p>Aprés l'on peut écrire "echo $nomVariable" ce sera la variable saisi dans la fonction qui sera récuperer. </h4></p>
+    </li>
+    </br>
+    <li><h3>2) Utiliser la variable du programme appelant comme argument de la fonction</h3>
+    <p><h4>Cette deuxieme méthode est à bannir car elle peut engranger des problémes.</p>
+    <p>Elle consiste à donner le nom de la variable comme argument "function test($nomVariable)".</p>
+            <p>Mais le risque de modification involontaire est important.</h4></p>
+    </li>
+    </br>
+    <li><h3>3) Déclarer la variable dans la fonction comme étant globale</h3>
+    <p><h4>Cette variable est déconseille car il peut y avoir les même probleme que pour la deuxieme méthode</p>
+        <p>Elle consiste à écrire "global $nomVariable" </p>
+        <p>Mais comme la deuxieme méthode le risque de modification involontaire est important.</h4></p>
+
+    </li>
+
+</ul>
+
+
+
+
+
+
+</body>
+</html>

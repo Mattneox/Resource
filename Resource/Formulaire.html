@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <title>Ici le titre de ma page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    </head>
+   
+    <body style="background-color : rgb(255, 255, 255)">
+    
+        <form action="Comment_crée_un_formulaire.html" method="">
+          <p>
+            <label for="zonePrenom">Votre prénom</label>
+            <input type="text" name="prenom"  size="50" maxlength="20" id="zonePrenom"/>
+          </p>
+          <p>
+            <input type="hidden" name="anneeEnCours" value="2022"/>
+          </p>          
+          <p>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" size="10" maxlength="10" id="mdp"/>
+          </p>
+
+          <p>
+            <input type="radio" name="sexe" value="masculin" checked="checked" id="homme"/>
+            <label for="homme">Homme</label>
+
+            <input type="radio" name="sexe" value="feminin" id="femme"/>
+            <label for="femme">Femme</label>
+
+            <input type="radio" name="sexe" value="autre" id="autre"/>
+            <label for="autre">Autre</label>       
+          </p>  
+          <p>
+            
+            <input type="radio" name="statut" value="eleve" id="eleve"/>
+            <label for="eleve">Elève</label>
+
+            <input type="radio" name="statut" value="professeur" checked="checked" id="prof"/>
+            <label for="prof">Professeur</label>   
+
+          </p>
+
+          <p>
+            Quelles sont les matières que vous appréciez particulièrement ?
+            <br/>
+            <label for="mat1">l'histoire</label>
+            <input type="checkbox" name="matiere[]" value="histoire" id="mat1" /> <br />
+            <label for="mat2">les maths</label>
+            <input type="checkbox" name="matiere[]" value="maths" id="mat2" /> <br /> 
+            <label for="mat3">l'informatique</label>
+            <input type="checkbox" name="matiere[]" value="informatique" checked="checked" id="mat3"/> <br />
+            <label for="mat4">le sport</label>
+            <input type="checkbox" name="matiere[]" value="sport" id="mat4"/>
+          </p>
+        
+          <p>
+            Appréciez vous les repas de la cantine ?<br />
+            <select name="sondage">
+                <option value="mauvais">c'est mauvais !</option>
+                <option value="moyen">ça se mange</option>
+                <option value="bon">c'est bon</option>
+                <option value="excellent" selected="selected">c'est excellent !</option>
+            </select>
+          </p>
+          
+          <p>
+            <label for="aireDeTexte">Quelle citation vous caractérise ?</label> <br />
+            <textarea id="aireDeTexte" name="citation" cols="40" rows="4">Ecrivez ici votre citation</textarea>  
+          </p>
+          <p>
+            <label>Date de la realisation du formulaire</label>
+            <br/>
+            <input type="date" name="formulaireDate" id="formulaireDate">
+          </p>
+          <p>
+            <input type="reset" name="effacerDonnees" value="réinitialiser le formulaire"/>
+          </p>
+          <p>
+            <input type="submit" name="valider"/>
+          </p>  
+        </form>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+

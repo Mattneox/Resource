@@ -1,0 +1,101 @@
+/** Section 1 **/
+.sec1 .container
+{
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.sec1 .container .left h1
+{
+    font-size: 5em;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.sec1 .container .left p
+{
+    color: #888888;
+    max-width: 600px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.sec1 .container .left button
+{
+    width: 300px;
+    height: 65px;
+    border-radius: 15px;
+    border: none;
+    color : #2c2534;
+    font-size: 1em;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px white;
+    text-transform: uppercase;
+}
+
+.sec1 .container .right img
+{
+    border-radius: 20px;
+    width: 95%;
+    border: 0;
+    animation: translateY 1.8s linear infinite;
+}
+
+@keyframes translateY {
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(0px);}
+    100%{transform: translateY(10px);}
+}
+
+
+
+/** Responsive pour une taille d'ecran de 1500px**/
+@media (max-width: 1500px)
+{
+.sec1 .container .left h1
+    {font-size: 4em;}
+}
+
+/** Responsive pour une taille d'ecran de 1300px**/
+@media (max-width: 1300px)
+{
+.sec1 .container
+{
+    flex-direction: column;
+}
+
+.left
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec1 .container .right img
+{
+    margin-top: 50px;
+    width: 90%;
+}
+
+}
+
+/** Responsive pour une taille d'ecran de 650px**/
+@media (max-width: 650px)
+{
+.sec1 .container .left h1
+    {font-size: 3em;}
+
+.sec1 .container .left p
+    {margin: 30px 25px;}
+}

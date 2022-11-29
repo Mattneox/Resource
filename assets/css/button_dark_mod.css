@@ -1,0 +1,30 @@
+label
+{
+   display: flex;
+   margin: 15px;
+   
+}
+
+input[type="checkbox"]
+{
+    visibility: hidden;
+    display: none;
+}
+
+.check
+{
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: white;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check
+{
+    background: black;
+    box-shadow: 0 0 0 3000px white
+}

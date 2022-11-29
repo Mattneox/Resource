@@ -1,0 +1,93 @@
+
+.sec4 .center
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.sec4 .title h4
+{
+    font-size: 1.5em;
+}
+
+.sec4 .title h1
+{
+    font-size: 4em;
+}
+
+.sec4 .card
+{
+    height: 450px;
+    width: 350px;
+    background: #0b3b57;
+    border-radius: 10px;
+    margin: 5px;
+    transition: 0.7s;
+    border: solid 2px rgb(88, 195, 231);
+
+}
+
+.sec4 .container 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.sec4 .container a
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.sec4 .card .top
+{
+    position: relative;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.sec4 .card .top img
+{
+    width: 100%;
+    height: 105%;
+    border-radius: 5px;
+}
+
+.sec4 .card .description
+{
+    line-break: anywhere;
+    color: white;
+    text-align: center;
+    margin: 30px 10px 0px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.sec4 .card .button
+{
+    font-size: 1.5em;
+}
+
+.sec4 .card:hover
+{
+    transform: translateY(-20px);
+} 
+
+@media (max-width: 1300px)
+{
+    .sec4 .card:hover
+{
+    transform: translateY(0px);
+} 
+
+.sec4 .card
+{
+    margin-bottom: 20px
+
+}
+
+}

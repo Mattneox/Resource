@@ -1,0 +1,13 @@
+.result
+{
+    display: flex;
+}
+.result .item
+{
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    bottom: 15%;
+    left: 15%;
+    width: 50%;
+}

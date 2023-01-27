@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste Animé</title>
+    <script src="script/script.js" defer></script>
+    <script src="script/pictureTable.js" defer></script>
+    <script src="script/randomPicture.js" defer></script>
+    <script src="script/listAllPicture.js" defer></script>
+    <style>
+        .game
+        {
+            align-items: center;
+            text-align: center;
+        }
+        .game img
+        {
+            height: 625px;
+            
+        }
+        @media (min-width: 1600px)
+        {
+            .game img
+            {
+                height: 837px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="next">Suivant</button> -->
+    <p>Appuyer sur "s" ------ Appuyer sur "p" ------ <button id="image">Image all</button></p>
+    
+    <h1 id="name_anime"></h1>
+    <img id="picture_anime">
+    
+    <div id="game" class="game"></div>
+</body>
+</html>

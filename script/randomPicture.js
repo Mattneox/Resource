@@ -1,7 +1,8 @@
 const gameCanvas = document.querySelector('#game');
+const input = document.querySelector('#random');
 
 //Touché à une touche du clavier
-document.addEventListener('keydown', game);
+input.addEventListener('keydown', game);
 
 function game(e)
 {

@@ -2,13 +2,11 @@ const gameCanvas = document.querySelector('#game');
 const input = document.querySelector('#random');
 
 //Touché à une touche du clavier
-input.addEventListener('keydown', game);
+input.addEventListener('click', game);
 
-function game(e)
+function game()
 {
-        bt = e.key;
-    if (bt == 'p')
-    {
+   
          //Afficher l'image dans la page html
         gameCanvas.innerHTML = ``;
         let img = document.createElement('img');
@@ -28,13 +26,5 @@ function game(e)
         let choosenPicture = pictures[randomNumber];
         //Changer l'image
         img.src = `pictures/random/${choosenPicture}`;
-
-    }else{
-        if (bt == "s")
-        {
-            gameCanvas.innerHTML = '';
-        }
-    }
-    
    
 }

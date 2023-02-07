@@ -1,0 +1,81 @@
+.containerLogin
+{
+    margin-top: 45px;
+
+}
+.containerLogin .form
+{
+    
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px black;
+    border-radius: 5px;
+    animation: translateY 2.5s linear infinite;
+}
+@keyframes translateY 
+{
+    0%{transform: translateY(var(--animation_0));}
+    50%{transform: translateY(var(--animation_100));}
+    100%{transform: translateY(var(--animation_0));}
+}
+.containerLogin .form input
+{
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Variables */
+:root
+{
+    --animation_0: 4px;
+    --animation_100: 0;
+
+    --background-z: -1;
+
+    --width_max: 100%;
+}
+
+/* Image de fond */
+.background
+{
+    position: fixed;
+    width: var(--width_max);
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--background-z);
+    
+}
+.dark
+{
+    padding-right: 25px ;
+    padding-left: 25px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+@media (max-width: 630px)
+{
+
+.containerLogin
+{
+    display: block;
+    position: fixed;
+    top: 25%;
+    margin: 10px;
+}
+
+.containerLogin .form
+{
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    animation: translateY 2.5s linear infinite;
+}
+}
+

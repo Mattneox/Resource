@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="script/connexion.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    
+</head>
+<body>
+    <button id="darkMode" class="dark" onClick="darkMode()">Dark Mode</button>
+    <button id="fullScreen" class="dark" onClick="Screen()">Plein Ecran</button>
+    
+    <section class="containerLogin">  
+        <form class="form" name=login>
+            <input type=text placeholder="pseudo" name=id>
+            <input type=password placeholder="password" name=mdp> <!-- onchange="Login()"-->
+            <input type=button value="connexion" onClick="Login()">
+        </form>
+    </section>
+
+    <img class="background" id="picture" src="pictures/fond/fond-technologie-numerique-fil-maille-reseau_1017-27428.jpg">
+</body>
+<!-- image random
+    <footer class="containerPicture">
+        <img id="img">
+    </footer>
+-->
+</html>

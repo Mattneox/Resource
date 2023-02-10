@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(max-width: 1000px)
+        {
+            fieldset
+            {
+                width: 97%;
+                height: 100%;
+            }
+            fieldset img
+            {
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="script/emote.js" defer></script>
+    <script src="script/uploadPicture.js" defer></script>
+
+</head>
+<body>
+    <div id="select"></div>
+<div id="emoteResult"></div>
+
+
+
+<label for="file">Choisir image</label>
+<input type="file" id="uploadFile" onChange="afficherPicture()"/>
+
+<fieldset style="text-align: center; margin: 0; padding: 0;">
+    <legend>Mes images</legend>
+    <img id="resultat" style="height: 600px;"/>
+</fieldset>
+
+
+<div id="emote" style="visibility: hidden; ">
+    
+    <img src="pictures/emote/duck.webp">
+    <img src="pictures/emote/4x (1).webp">
+    <img src="pictures/emote/elban.webp">
+    <img src="pictures/emote/Who-asked.webp">
+    <img src="pictures/emote/note.webp">
+    <img src="pictures/emote/mute.webp">
+    <img src="pictures/emote/coding-time.webp">
+    <img src="pictures/emote/potaMoney.webp">
+
+</div>
+
+<button style="visibility: hidden;" onClick="document.getElementById('emote').style.visibility='visible'">Afficher</button>
+
+    
+</body>
+</html>
